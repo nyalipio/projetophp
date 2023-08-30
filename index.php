@@ -1,83 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kit Festa</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Loja de Kits de Festa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87CEFA;
+        }
+        header {
+            background-color:	#BC8F8F ;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Kit Festa 10 pessoas.</h1>
-        <nav>
-            <ul>
-                <li><a href="#">1,5kg bolo (creme de chocolate com bombons, floresta negra, Mousse de Maracujá ou creme com Morango</a></li>
-                <li><a href="#">30 docinhos (brigadeiro e beijinho)a></li>
-                <li><a href="#">50 salgados (coxinha, bolinha de queijo, kibe ou esfiha carne)</a></li>
-                <li><a href="#">2 litros refrigerante</a></li>
-                <li><a href="#">Descartáveis (pratinhos, guardanapos, garfinhos e 1 vela)</a></li>
-            </ul>
-        </nav>
-
-         <h1>Kit Festa 20 pessoas.</h1>
-        <nav>
-            <ul>
-                <li><a href="#">2kg bolo (creme de chocolate com bombons, floresta negra, Mousse de Maracujá ou creme com Morango</a></li>
-                <li><a href="#">150 docinhos (brigadeiro e beijinho)a></li>
-                <li><a href="#">100 salgados (coxinha, bolinha de queijo, kibe ou esfiha carne)</a></li>
-                <li><a href="#">4 litros refrigerante</a></li>
-                <li><a href="#">Descartáveis (pratinhos, guardanapos, garfinhos e 1 vela)</a></li>
-            </ul>
-        </nav>
-
-         <h1>Kit Festa 30 pessoas.</h1>
-        <nav>
-            <ul>
-                <li><a href="#">3kg bolo (creme de chocolate com bombons, floresta negra, Mousse de Maracujá ou creme com Morango</a></li>
-                <li><a href="#">150 docinhos (brigadeiro e beijinho)a></li>
-                <li><a href="#">100 salgados (coxinha, bolinha de queijo, kibe ou esfiha carne)</a></li>
-                <li><a href="#">6 litros refrigerante</a></li>
-                <li><a href="#">Descartáveis (pratinhos, guardanapos, garfinhos e 1 vela)</a></li>
-            </ul>
-        </nav>
-
-         <h1>Kit Festa 50 pessoas.</h1>
-        <nav>
-            <ul>
-                <li><a href="#">4kg bolo (creme de chocolate com bombons, floresta negra, Mousse de Maracujá ou creme com Morango</a></li>
-                <li><a href="#">250 docinhos (brigadeiro e beijinho)a></li>
-                <li><a href="#">200 salgados (coxinha, bolinha de queijo, kibe ou esfiha carne)</a></li>
-                <li><a href="#">8 litros refrigerante</a></li>
-                <li><a href="#">Descartáveis (pratinhos, guardanapos, garfinhos e 1 vela)</a></li>
-            </ul>
-        </nav>
+        <h1>Loja de Kits de Festa</h1>
     </header>
-    
-    <section class="hero">
-        <h2>Seu Kit Festa Completo</h2>
-        <p>Faça sua festa com nossos incríveis kits festa! Pela metade do preço</p>
-        <a href="#" class="cta-button">Ver Produtos</a>
-    </section>
-    
-    <section class="products">
-        <h2>Produtos em Destaque</h2>
+    <nav>
+        <a href="index.php">Início</a>
+        <a href="produtos.php">Produtos</a>
+        <a href="contato.php">Contato</a>
+        <a href="formadm.php">Administrador</a>
+    </nav>
+    <div class="container">
         <div class="product">
-            <img src="produto1.jpg" alt="Kit Festa 1">
-            <h3>Kit Festa Premium</h3>
-            <p>Descrição do kit festa premium. Inclui balões, decorações e muito mais.</p>
-            <a href="#" class="product-button">Ver Detalhes</a>
+            <h2>Kit Festa Padrão</h2>
+            <p>Descrição do kit festa padrão...</p>
+            <p>Preço: R$50,00</p>
+            <button>Adicionar ao Carrinho</button>
         </div>
         <div class="product">
-            <img src="produto2.jpg" alt="Kit Festa 2">
-            <h3>Kit Festa Básico</h3>
-            <p>Descrição do kit festa básico. Perfeito para festas pequenas e íntimas.</p>
-            <a href="#" class="product-button">Ver Detalhes</a>
+            <h2>Kit Festa Premium</h2>
+            <p>Descrição do kit festa premium...</p>
+            <p>Preço: R$100,00</p>
+            <button>Adicionar ao Carrinho</button>
         </div>
         <!-- Adicione mais produtos aqui -->
-    </section>
-    
-    <footer>
-        <p>&copy; 2023 Kit Festa Inc. Todos os direitos reservados.</p>
-    </footer>
+    </div>
+    <?php include 'rodape.php'; ?>
 </body>
 </html>
